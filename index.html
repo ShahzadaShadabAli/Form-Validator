@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up Today!</h1>
+        <!-- Form -->
+        <form id="form" novalidate>
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input name="name"  required minlength="3" maxlength="50" type="text" id="name" placeholder="Your Full Name">
+            </div>
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input name="phone" required minlength="3" maxlength="50" type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="666-999-6969">
+            </div>
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" required minlength="3" maxlength="50" type="email" id="email" placeholder="Your Email">
+            </div>
+            <!-- Website -->
+            <div class="form-group">
+                <label for="website">Website</label>
+                <input name="website" required minlength="3" maxlength="50"  type="url" id="website" placeholder="https://Shadab.com">
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" required minlength="3" maxlength="50" type="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" placeholder="Min. 8 Characters" title="Kindly add atleast 1 Uppercase letter, 1 lowercase letter and 1 Number...">
+            </div>
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input name="password2" required minlength="3" maxlength="50" type="password" id="password2" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" placeholder="Confirm Your Password">
+            </div>
+            <!-- Submit -->
+            <button type="submit">Register</button>
+        </form>
+        <!-- Error/Success Notifier -->
+        <div class="message-container">
+            <h3 class="message">Don't Hesitate!</h3>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
